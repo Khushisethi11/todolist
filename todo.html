@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+  <header>
+    <h1>Todo App</h1>
+    <div class="add-buttons">
+      <button id="addToday">Today</button>
+      <button id="addTomorrow">Tomorrow</button>
+      <button id="addSomeday">Someday</button>
+    </div>
+  </header>
+  <main>
+    <div id="todayScreen" class="screen"> 
+      <h2>Today's Tasks</h2>
+      <ul id="todayTasks" class="task-list">
+        
+      </ul>
+    </div>
+    <div id="tomorrowScreen" class="screen"> 
+      <h2>Tomorrow's Tasks</h2>
+      <ul id="tomorrowTasks" class="task-list">
+      </ul>
+    </div>
+    <div id="somedayScreen" class="screen"> 
+      <h2>Someday's Tasks</h2>
+      <ul id="somedayTasks" class="task-list">
+      </ul>
+    </div>
+    <div id="allTasksScreen" class="screen"> 
+      <h2>All Tasks</h2>
+      <ul id="allTasks" class="task-list">
+      </ul>
+    </div>
+  </main>
+  <aside>
+    <h2>Notes</h2>
+    <textarea id="notes" rows="4" cols="30" placeholder="Add your notes here..."></textarea>
+  </aside>
+
+  <script src="todo.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* styles.css */
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark gray text color */
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #ff7eb9; /* Pink background */
+    padding: 20px;
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .add-buttons button {
+    background-color: #47a8f4; /* Blue background */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .add-buttons button:hover {
+    background-color: #337ab7; /* Darker blue background on hover */
+  }
+  
+  /* Main section styles */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .screen {
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Notes section styles */
+  aside {
+    background-color: #ff7eb9; /* Pink background */
+    color: #fff; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    margin-top: 20px;
+  }
+  
+  /* Textarea styles */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  /* Checkbox styles */
+  .checkbox-container {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 2px solid #ff7eb9; /* Pink border */
+    border-radius: 5px;
+    cursor: pointer;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .checkbox:checked {
+    background-color: #ff7eb9; /* Pink background when checked */
+  }
+  
+  .checkbox:checked::after {
+    content: '\2714'; /* Checkmark */
+    font-size: 16px;
+    color: #fff; /* White color */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
